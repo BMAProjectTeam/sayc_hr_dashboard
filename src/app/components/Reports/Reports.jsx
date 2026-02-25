@@ -28,7 +28,7 @@ const ReportsPage = () => {
     setError(null);
 
     try {
-      const base = "https://jellyfish-app-z83s2.ondigitalocean.app";
+      const base = "https://sayc-app-api-39gxh.ondigitalocean.app";
       const token = sessionStorage.getItem("access_token");
 
       const safeFetch = async (url) => {

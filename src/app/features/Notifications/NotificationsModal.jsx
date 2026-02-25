@@ -13,12 +13,12 @@ const NotificationsModal = ({ onClose }) => {
   const [filter, setFilter] = useState('all');
   const [loading, setLoading] = useState(true);
 
-  // ✅ Fetch applicants from API
+  // Fetch applicants from API
   useEffect(() => {
     const fetchApplicants = async () => {
       try {
         const response = await axios.get(
-          "https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/all_applicants",
+          "https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/all_applicants",
           {
             headers: {
               "Accept": "application/json",
@@ -30,7 +30,7 @@ const NotificationsModal = ({ onClose }) => {
 
         const applicants = response.data;
 
-        // ✅ Convert applicants into notifications
+        // Convert applicants into notifications
         const formattedNotifications = applicants.map((applicant, index) => ({
           id: applicant.application_code || index,
           type: 'application',

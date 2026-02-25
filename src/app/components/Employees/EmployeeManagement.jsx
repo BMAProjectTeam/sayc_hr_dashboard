@@ -103,7 +103,7 @@ const EmployeeManagement = ({ isOpen, onClose, formData }) => {
       };
 
       const response = await fetch(
-        `https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/updateEmployee/${employeeData.id}`,
+        `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/updateEmployee/${employeeData.id}`,
         {
           method: "POST",
           headers: {
@@ -163,7 +163,7 @@ const EmployeeManagement = ({ isOpen, onClose, formData }) => {
 
     try {
       const response = await axios.post(
-        `https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/deleteCandidate/${employeeId}/${candidateId}`,
+        `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/deleteCandidate/${employeeId}/${candidateId}`,
         {
           employee_id: employeeId,
           candidate_id: candidateId,

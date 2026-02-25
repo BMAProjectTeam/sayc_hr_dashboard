@@ -14,7 +14,7 @@ export async function apiLogin({ email, password }) {
 }
 
 export async function fetchAllApplicants() {
-  const res = await fetch("https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/all_applicants", {
+  const res = await fetch("https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/all_applicants", {
     method: "GET",
     headers: { "Content-Type": "application/json" },
     cache: "no-store", // ensures fresh data every time
@@ -28,9 +28,9 @@ export async function fetchAllApplicants() {
 }
 
 export async function fetchPersonalInfo(applicantId) {
-  console.log("Attempting to fetch personal info for:", applicantId); // 🔥
+  console.log("Attempting to fetch personal info for:", applicantId);
   const res = await fetch(
-    `https://jellyfish-app-z83s2.ondigitalocean.app/api/candidate/personalInfo/${applicantId}`,
+    `https://sayc-app-api-39gxh.ondigitalocean.app/api/candidate/personalInfo/${applicantId}`,
     {
       method: "GET",
       headers: { "Content-Type": "application/json" },
@@ -43,14 +43,14 @@ export async function fetchPersonalInfo(applicantId) {
   }
 
   const data = await res.json();
-  console.log("Received data:", data); // 🔥
+  console.log("Received data:", data);
   return data;
 }
 
 export async function fetchEducation(applicantId) {
-  console.log("Attempting to fetch education info for:", applicantId); // 🔥
+  console.log("Attempting to fetch education info for:", applicantId);
   const res = await fetch(
-    `https://jellyfish-app-z83s2.ondigitalocean.app/api/candidate/myEducation/${applicantId}`,
+    `https://sayc-app-api-39gxh.ondigitalocean.app/api/candidate/myEducation/${applicantId}`,
     {
       method: "GET",
       headers: { "Content-Type": "application/json" },
@@ -63,14 +63,14 @@ export async function fetchEducation(applicantId) {
   }
 
   const data = await res.json();
-  console.log("Received data:", data); // 🔥
+  console.log("Received data:", data);
   return data;
 }
 
 export async function fetchExperience(applicantId) {
-  console.log("Attempting to fetch experience info for:", applicantId); // 🔥
+  console.log("Attempting to fetch experience info for:", applicantId);
   const res = await fetch(
-    `https://jellyfish-app-z83s2.ondigitalocean.app/api/candidate/myExperience/${applicantId}`,
+    `https://sayc-app-api-39gxh.ondigitalocean.app/api/candidate/myExperience/${applicantId}`,
     {
       method: "GET",
       headers: { "Content-Type": "application/json" },
@@ -83,14 +83,14 @@ export async function fetchExperience(applicantId) {
   }
 
   const data = await res.json();
-  console.log("Received data:", data); // 🔥
+  console.log("Received data:", data);
   return data;
 }
 
 export async function fetchSkills(applicantId) {
-  console.log("Attempting to fetch skill info for:", applicantId); // 🔥
+  console.log("Attempting to fetch skill info for:", applicantId);
   const res = await fetch(
-    `https://jellyfish-app-z83s2.ondigitalocean.app/api/candidate/mySkills/${applicantId}`,
+    `https://sayc-app-api-39gxh.ondigitalocean.app/api/candidate/mySkills/${applicantId}`,
     {
       method: "GET",
       headers: { "Content-Type": "application/json" },
@@ -103,13 +103,13 @@ export async function fetchSkills(applicantId) {
   }
 
   const data = await res.json();
-  console.log("Received data:", data); // 🔥
+  console.log("Received data:", data);
   return data;
 }
 
 export async function fetchQuestions(jobId, applicantId) {
   const res = await fetch(
-    `https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/applicationQuestions/${jobId}/${applicantId}`,
+    `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/applicationQuestions/${jobId}/${applicantId}`,
     {
       method: "GET",
       headers: { "Content-Type": "application/json" },
@@ -127,7 +127,7 @@ export async function fetchQuestions(jobId, applicantId) {
 export async function fetchApplicationScore(jobId, applicantId) {
   if (!jobId || !applicantId) throw new Error("Missing jobId or applicantId");
 
-  const res = await fetch(`https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/applicationScore/${jobId}/${applicantId}`, {
+  const res = await fetch(`https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/applicationScore/${jobId}/${applicantId}`, {
     method: "GET",
     headers: { "Content-Type": "application/json" },
   });

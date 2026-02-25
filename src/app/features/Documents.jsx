@@ -31,7 +31,7 @@ const DocumentsModal = ({ onClose }) => {
       setError("");
 
       const response = await axios.get(
-        "https://jellyfish-app-z83s2.ondigitalocean.app/api/admin/allDocuments"
+        "https://sayc-app-api-39gxh.ondigitalocean.app/api/admin/allDocuments"
       );
 
       // Map API response to frontend table format

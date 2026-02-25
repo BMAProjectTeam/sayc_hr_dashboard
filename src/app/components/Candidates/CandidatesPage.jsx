@@ -62,7 +62,7 @@ const CandidatesPage = () => {
     const fetchApplicants = async () => {
       try {
         const response = await fetch(
-          "https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/all_applicants",
+          "https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/all_applicants",
           { method: "GET", headers: { Accept: "application/json" } }
         );
         if (!response.ok) throw new Error("Failed to fetch applicants");
@@ -96,7 +96,7 @@ const CandidatesPage = () => {
   const fetchApplicantResumes = async (applicantId) => {
     try {
       const res = await fetch(
-        `https://jellyfish-app-z83s2.ondigitalocean.app/api/candidate/myApplications/${applicantId}`
+        `https://sayc-app-api-39gxh.ondigitalocean.app/api/candidate/myApplications/${applicantId}`
       );
       if (!res.ok) throw new Error("Failed to fetch applicant resumes");
 

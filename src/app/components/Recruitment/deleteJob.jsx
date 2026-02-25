@@ -24,7 +24,7 @@ const DeleteJobModal = ({
 
     try {
       const response = await fetch(
-        `https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/deletePost/${employeeId}/${jobId}`,
+        `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/deletePost/${employeeId}/${jobId}`,
         {
           method: "POST",
           headers: {

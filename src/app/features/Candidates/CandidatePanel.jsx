@@ -130,7 +130,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
     try {
       const response = await fetch(
-        `https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/candidateEvaluation/${employeeId}/${candidate.id}/${candidate.job_id}`,
+        `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/candidateEvaluation/${employeeId}/${candidate.id}/${candidate.job_id}`,
         {
           method: "POST",
           headers: {
@@ -191,7 +191,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
     try {
       const response = await fetch(
-        `https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/interviewCandidate/${employeeId}/${candidate.id}/${candidate.job_id}`,
+        `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/interviewCandidate/${employeeId}/${candidate.id}/${candidate.job_id}`,
         { method: "POST",
           headers: {
           "Content-Type": "application/json",
@@ -246,7 +246,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
     try {
       const response = await fetch(
-        `https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/sendOffer/${employeeId}/${candidate.id}`,
+        `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/sendOffer/${employeeId}/${candidate.id}`,
         {
           method: "POST",
           headers: {
@@ -286,7 +286,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
       try {
         const response = await fetch(
-          `https://jellyfish-app-z83s2.ondigitalocean.app/api/candidate/myJobOffers/${candidate.id}`
+          `https://sayc-app-api-39gxh.ondigitalocean.app/api/candidate/myJobOffers/${candidate.id}`
         );
 
         if (!response.ok) {
@@ -342,7 +342,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
     try {
       const response = await fetch(
-        `https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/onboardEmployee/${employeeId}/${candidate.id}`,
+        `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/onboardEmployee/${employeeId}/${candidate.id}`,
         {
           method: "POST",
           headers: {
@@ -401,7 +401,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
   try {
     const response = await fetch(
-      `https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/updateApplicationStatus/${employeeId}/${candidate.id}`,
+      `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/updateApplicationStatus/${employeeId}/${candidate.id}`,
       {
         method: "POST",
         headers: {
@@ -454,7 +454,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
     try {
       const response = await fetch(
-        "https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/sendCandidateMessage",
+        "https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/sendCandidateMessage",
         {
           method: "POST",
           headers: {

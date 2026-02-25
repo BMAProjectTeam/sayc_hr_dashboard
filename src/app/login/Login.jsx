@@ -17,7 +17,7 @@ export default function LoginPage() {
     setError("");
 
     try {
-      const res = await fetch("https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/hrLogin", {
+      const res = await fetch("https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/hrLogin", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",

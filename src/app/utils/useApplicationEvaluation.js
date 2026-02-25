@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { calculateTotalScore, getPerformanceLevel } from "./applicationQuizData";
 
-const BASE_URL = "https://jellyfish-app-z83s2.ondigitalocean.app";
+const BASE_URL = "https://sayc-app-api-39gxh.ondigitalocean.app";
 
 export const useApplicationEvaluation = (applicantId) => {
   const [applications, setApplications] = useState([]);

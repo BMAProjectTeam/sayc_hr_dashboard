@@ -241,7 +241,7 @@ const NewJobPost = ({ onClose, onSave, existingJob = null }) => {
     };
 
       const jobPostRes = await postJSON(
-        `https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/jobPost/${encodeURIComponent(eid)}`,
+        `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/jobPost/${encodeURIComponent(eid)}`,
         token,
         jobPostPayload
       );
@@ -265,7 +265,7 @@ const NewJobPost = ({ onClose, onSave, existingJob = null }) => {
           offered_salary: Number(formData.offeringSalary || 0),
         };
         await postJSON(
-          `https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/jobFilters/${encodeURIComponent(eid)}/${encodeURIComponent(
+          `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/jobFilters/${encodeURIComponent(eid)}/${encodeURIComponent(
             jobId
           )}`,
           token,
@@ -278,7 +278,7 @@ const NewJobPost = ({ onClose, onSave, existingJob = null }) => {
         await Promise.all(
           formData.customQuestions.map((q) =>
             postJSON(
-              `https://jellyfish-app-z83s2.ondigitalocean.app/api/hr/jobQuestion/${encodeURIComponent(
+              `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/jobQuestion/${encodeURIComponent(
                 eid
               )}/${encodeURIComponent(jobId)}`,
               token,
