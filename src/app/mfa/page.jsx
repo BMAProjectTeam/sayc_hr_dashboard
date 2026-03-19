@@ -51,6 +51,8 @@ export default function MFAPage() {
       }
 
       sessionStorage.setItem("employee_email", data.email);
+      sessionStorage.setItem("access_token", data.access_token);
+
       router.push("/pages/applications");
     } catch (err) {
       setError(err.message);

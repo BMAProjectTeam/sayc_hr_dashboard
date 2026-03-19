@@ -28,7 +28,6 @@ export default function LoginPage() {
 
       if (!res.ok) throw new Error(data.message || "Login failed");
 
-      sessionStorage.setItem("access_token", data.access_token);
       sessionStorage.setItem("user_id", data.user_id);
 
       router.push("/mfa");
