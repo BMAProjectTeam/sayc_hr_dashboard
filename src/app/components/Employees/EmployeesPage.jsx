@@ -54,7 +54,7 @@ const EmployeesPage = () => {
     const fetchEmployees = async () => {
       try {
         const response = await fetch(
-          "https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/allEmployees",
+          "https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/allEmployees",
           {
             method: "GET",
             headers: { Accept: "application/json" }

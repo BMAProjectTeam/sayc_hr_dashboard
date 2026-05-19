@@ -140,7 +140,7 @@ const ApplicationModal = ({ application, onClose, onAction }) => {
     const fetchDocuments = async () => {
       try {
         const response = await fetch(
-          "https://sayc-app-api-39gxh.ondigitalocean.app/api/admin/allDocuments",
+          "https://e-recuite-api-inmpf.ondigitalocean.app/api/admin/allDocuments",
           {
             method: "GET",
             headers: { Accept: "application/json" }
@@ -224,7 +224,7 @@ const ApplicationModal = ({ application, onClose, onAction }) => {
 
     try {
       const response = await fetch(
-        `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/updateApplicationStatus/${employeeId}/${candidateId}`,
+        `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/updateApplicationStatus/${employeeId}/${candidateId}`,
         {
           method: "POST",
           headers: {
@@ -299,7 +299,7 @@ const ApplicationModal = ({ application, onClose, onAction }) => {
 
     try {
       const response = await fetch(
-        `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/updateApplicationStatus/${employeeId}/${candidateId}`,
+        `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/updateApplicationStatus/${employeeId}/${candidateId}`,
         {
           method: "POST",
           headers: {

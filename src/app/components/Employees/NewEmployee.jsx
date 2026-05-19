@@ -95,7 +95,7 @@ const NewEmployee = ({ isOpen, onClose, creatorEmployeeId }) => {
       };
 
       const response = await fetch(
-        "https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/addNewEmployee",
+        "https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/addNewEmployee",
         {
           method: "POST",
           headers: {

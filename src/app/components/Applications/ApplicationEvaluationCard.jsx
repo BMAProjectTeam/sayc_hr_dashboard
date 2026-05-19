@@ -20,7 +20,7 @@ export default function ApplicationEvaluationCard({ employeeId, candidateId, job
 
     try {
       const res = await fetch(
-        `https://sayc-app-api-39gxh.ondigitalocean.app/hr/candidateEvaluation/${employeeId}/${candidateId}/${jobId}`,
+        `https://e-recuite-api-inmpf.ondigitalocean.app/hr/candidateEvaluation/${employeeId}/${candidateId}/${jobId}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

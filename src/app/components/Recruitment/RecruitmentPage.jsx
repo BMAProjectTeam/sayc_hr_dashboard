@@ -39,7 +39,7 @@ const JobPosts = () => {
 
       try {
         const response = await fetch(
-          'https://sayc-app-api-39gxh.ondigitalocean.app/api/candidate/allPosts'
+          'https://e-recuite-api-inmpf.ondigitalocean.app/api/candidate/allPosts'
         );
 
         if (!response.ok) {

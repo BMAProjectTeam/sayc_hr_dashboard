@@ -36,7 +36,7 @@ export default function MFAPage() {
 
     try {
       const res = await fetch(
-        "https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/hrAuth",
+        "https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/hrAuth",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -69,7 +69,7 @@ export default function MFAPage() {
 
     try {
       const res = await fetch(
-        `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/resendMFA/${userId}`,
+        `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/resendMFA/${userId}`,
         { method: "POST" }
       );
       const data = await res.json();

@@ -55,7 +55,7 @@ const InterviewDetailsModal = ({ interview, onClose, onAction }) => {
       setLoading(true);
 
       const response = await fetch(
-        `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/rescheduleInterview/${employeeId}/${interview.candidateId}/${interview.id}`,
+        `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/rescheduleInterview/${employeeId}/${interview.candidateId}/${interview.id}`,
         {
           method: "POST",
           headers: {

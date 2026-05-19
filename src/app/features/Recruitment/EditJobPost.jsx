@@ -243,7 +243,7 @@ const EditJobPost = ({ onClose, onSave, existingJob = null }) => {
     };
 
       const jobPostRes = await postJSON(
-        `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/job_post/edit`,
+        `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/job_post/edit`,
         token,
         jobPostPayload
       );
@@ -267,7 +267,7 @@ const EditJobPost = ({ onClose, onSave, existingJob = null }) => {
           offered_salary: Number(formData.offeringSalary || 0),
         };
         await postJSON(
-          `https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/job_filters/edit`,
+          `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/job_filters/edit`,
           token,
           jobFiltersPayload
         );
